@@ -73,7 +73,6 @@ window.onload = function() {
 	
 	// Events
 	document.addEventListener("deviceready", onDeviceReady, false);
-	$( ":mobile-pagecontainer" ).pagecontainer( "load", "pageone", { showLoadMsg: false } );
 	
 	
 	// Canvas, Body and Graphics context
@@ -191,7 +190,7 @@ function restart() {
 
 // onResume Function
 function onResume() {
-	$.mobile.changePage("pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
+	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
 
