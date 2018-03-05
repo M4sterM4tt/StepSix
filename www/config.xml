@@ -8,6 +8,9 @@
 
     <name>Step Six</name>
 	<description>This is a Mobile Game which is only available on Android.</description>
-	<author email="WAIM1_16@uni.worc.ac.uk">Matthew Waite</author>	
+	<author email="WAIM1_16@uni.worc.ac.uk">Matthew Waite</author>
+	<platform name="android" />
+	<icon src="assets/skull_And_Crossbones.png" width="180" height="180" />
+	<preference name="orientation" value="landscape" />  
 	
 </widget>
