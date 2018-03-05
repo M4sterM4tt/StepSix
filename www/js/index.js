@@ -73,6 +73,7 @@ window.onload = function() {
 	
 	// Events
 	document.addEventListener("deviceready", onDeviceReady, false);
+	$( ":mobile-pagecontainer" ).pagecontainer( "load", "pageone", { showLoadMsg: false } );
 	
 	
 	// Canvas, Body and Graphics context
