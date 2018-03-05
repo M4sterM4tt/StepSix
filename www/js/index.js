@@ -173,18 +173,7 @@ function onDeviceReady() {
 // onPause Function
 function onPause() {
 	pause = true;
-}
-
-
-// unPause Function
-function unPause() {
-	pause = false;
-}
-
-
-// restart Function
-function restart() {
-	location.reload(); // Reloads page
+	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
 
@@ -198,6 +187,20 @@ function onResume() {
 function onMenuKeyDown() {
 	pause = true;
 }
+
+
+// unPause Function
+function unPause() {
+	pause = false;
+	$.mobile.changePage("#pageone", {transition: "slideup", changeHash: false }); // Goes to Page one
+}
+
+
+// restart Function
+function restart() {
+	location.reload(); // Reloads page
+}
+
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------	3

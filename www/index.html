@@ -20,7 +20,8 @@
     </head><!-- Closes the head element -->	
     <body><!-- Creates an body element -->
 
-
+		
+		<!-- Creates Page one -->
 		<div data-role="page" id="pageone" data-theme="a"> 
 		
 			<div data-role="content" class="ui-content">
@@ -55,24 +56,26 @@
 				
 				</canvas>
 				
+				<input value="Pause" type="button" onclick="onPause();" data-theme="a"></input>
+				
 			</div>
 		
 		</div>
 		
-		<div data-role="page" id="pagetwo" data-theme="a"> 
 		
-			<fieldset class="ui-content" data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+		<!-- Creates Page two -->
+		<div data-role="page" id="pagetwo" data-theme="a"> 
 			
-				<div data-role="header" data-theme="a">Game is Paused</div>
+				<div data-role="header" data-position="inline" data-theme="a">
+					<h1>Game is Paused</h1>
+				</div>
 			
 				<div role="main" data-theme="a">
 				
 					<input value="Restart Game" type="button" onclick="restart();" data-theme="a"></input>
-					<input value="Resume Game" type="button" onclick="unPause();" data-theme="a"></input>	
+					<input value="Resume Game" type="button" onclick="unPause();" data-theme="a"></input>
 					
 				</div>
-			
-			</fieldset>
 		
 		</div>
 			
