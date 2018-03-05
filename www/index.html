@@ -1,11 +1,10 @@
 <!DOCTYPE html><!-- Defines the document as HTML -->  
 <html><!-- Creates Hyper Text Markup Language Element -->
     <head><!-- Creates an head element -->
-	
-		<title>Ball Maze Game</title><!-- Sets title of the homepage to "Ball Maze Game" -->
 		
-		<meta charset="UTF-8">
-		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ball Maze Game</title><!-- Sets title of the homepage to "Ball Maze Game" -->
 		
 		<link rel="stylesheet" href="css/themes/Ball_Game_Theme.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
@@ -24,7 +23,7 @@
 
 		<div data-role="page" id="pageone" data-theme="a"> 
 		
-			<div role="main" class="ui-content" data-theme="a">
+			<div data-role="content" data-theme="a">
 
 				<canvas id="canvas">
 				
@@ -64,7 +63,7 @@
 		
 			<div data-role="header" data-theme="a">Game is Paused</div>
 		
-			<div role="main" class="ui-content" data-theme="a">
+			<div data-role="main" data-theme="a">
 			
 				<button type="button" onclick="restart();" data-theme="a">Restart Game</button>
 				<button type="button" onclick="unPause();" data-theme="a">Resume Game</button>	
