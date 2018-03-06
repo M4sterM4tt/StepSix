@@ -7,6 +7,7 @@
 // NEED TO REFRENCE THIS https://www.w3schools.com/tags/ref_eventattributes.asp
 // NEED TO REFRENCE THIS http://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
 // NEED TO REFRENCE THIS https://cordova.apache.org/docs/en/latest/cordova/events/events.html
+// NEED TO REFRENCE THIS http://demos.jquerymobile.com/1.4.5/pages/
 
 // Canvas Variables 
 var canvas; 
@@ -60,11 +61,12 @@ var previous;
 var previousTwo;
 var breaker;
 var touch;
+var countdown;
+var time;
 var loop;
 var loopTwo;
 var loopThree;
 var loopFour;
-
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------	1
 
@@ -127,6 +129,8 @@ window.onload = function() {
 	previousTwo = 1;
 	breaker = 1;
 	touch = 0;
+	countdown = 3;
+	time = 0;
 	
 	
 	// Add Base and Player
@@ -179,6 +183,7 @@ function onPause() {
 
 // onResume Function
 function onResume() {
+	pause = true;
 	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
@@ -186,6 +191,7 @@ function onResume() {
 // onMenuKeyDown Function
 function onMenuKeyDown() {
 	pause = true;
+	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
 
@@ -213,6 +219,17 @@ function render() {
 	if (pause == false) {
 
 	
+		if (countdown != 0) {
+			setTimeout(render, 10000);
+			countdown = countdown - 1;
+			document.getElementById('time').innerHTML = "COUNT DOWN: " + countdown;
+		}
+		else {
+			time = (Number(time) + Number(renderTime/200)).toFixed(4);
+			document.getElementById('time').innerHTML = "Time: " + time;
+		}
+		 
+		 
 		// Motion Function
 		window.ondevicemotion = function(deviceMotionEvent) {
 		

@@ -24,7 +24,11 @@
 		<div data-role="page" id="pageone" data-theme="a"> 
 		
 			<div data-role="content" class="ui-content">
-
+			
+				<div data-role="header" id="time">
+					COUNT DOWN: 3
+				</div>
+				
 				<canvas id="canvas">
 				
 				
@@ -54,9 +58,10 @@
 				
 				
 				</canvas>
+
 				
 				<!---<input value="Pause" type="button" onclick="onPause();" data-theme="a"></input>--->
-				<input value="Pause" type="button" onclick="onPause()" ></input>
+				<input value="Pause" type="button" touchend="onPause()" ></input>
 				
 			</div>
 		
@@ -72,8 +77,8 @@
 			
 				<div role="main" data-theme="a">
 				
-					<input value="Restart Game" type="button" onclick="restart();" data-theme="a"></input>
-					<input value="Resume Game" type="button" onclick="unPause();" data-theme="a"></input>
+					<input value="Restart Game" type="button" touchend="restart();" data-theme="a"></input>
+					<input value="Resume Game" type="button" touchend="unPause();" data-theme="a"></input>
 					
 				</div>
 		
