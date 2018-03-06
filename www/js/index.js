@@ -175,6 +175,7 @@ function onDeviceReady() {
 // onPause Function
 function onPause() {
 	pause = true;
+	alert("hi")
 	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
@@ -182,6 +183,7 @@ function onPause() {
 // onResume Function
 function onResume() {
 	pause = true;
+	alert("hi2")
 	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
