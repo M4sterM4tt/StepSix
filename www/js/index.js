@@ -78,8 +78,8 @@ window.onload = function() {
 	
 	// Canvas, Body and Graphics context
 	canvas = document.getElementById("canvas");
-    canvas.width = (9/10)*window.innerWidth;
-    canvas.height = (9/10)*window.innerHeight;
+    canvas.width = (8/10)*window.innerWidth;
+    canvas.height = (8/10)*window.innerHeight;
 	body = canvas.getContext("2d");
 	
 	
@@ -175,7 +175,6 @@ function onDeviceReady() {
 // onPause Function
 function onPause() {
 	pause = true;
-	alert("hi")
 	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
@@ -183,7 +182,6 @@ function onPause() {
 // onResume Function
 function onResume() {
 	pause = true;
-	alert("hi2")
 	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
 }
 
