@@ -61,7 +61,6 @@ var previous;
 var previousTwo;
 var breaker;
 var touch;
-var countdown;
 var time;
 var loop;
 var loopTwo;
@@ -129,7 +128,6 @@ window.onload = function() {
 	previousTwo = 1;
 	breaker = 1;
 	touch = 0;
-	countdown = 3;
 	time = 0;
 	
 	
@@ -218,18 +216,10 @@ function render() {
 	
 	if (pause == false) {
 
-	
-		if (countdown != 0) {
-			setTimeout(render, 10000);
-			countdown = countdown - 1;
-			document.getElementById('time').innerHTML = "COUNT DOWN: " + countdown;
-		}
-		else {
-			time = (Number(time) + Number(renderTime/200)).toFixed(4);
-			document.getElementById('time').innerHTML = "Time: " + time;
-		}
-		 
-		 
+		time = (Number(time) + Number(renderTime/200)).toFixed(4);
+		document.getElementById('time').innerHTML = "Time: " + time;
+
+
 		// Motion Function
 		window.ondevicemotion = function(deviceMotionEvent) {
 		
@@ -670,3 +660,4 @@ window.addEventListener("touchend", function wallArrowTouchEnd(event) {
 		breaker = 1;
 	}
 });
+
