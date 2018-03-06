@@ -78,8 +78,8 @@ window.onload = function() {
 	
 	// Canvas, Body and Graphics context
 	canvas = document.getElementById("canvas");
-    canvas.width = (8/10)*window.innerWidth;
-    canvas.height = (8/10)*window.innerHeight;
+    canvas.width = (9/10)*window.innerWidth;
+    canvas.height = (9/10)*window.innerHeight;
 	body = canvas.getContext("2d");
 	
 	
