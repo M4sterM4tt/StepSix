@@ -8,6 +8,7 @@
 // NEED TO REFRENCE THIS http://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
 // NEED TO REFRENCE THIS https://cordova.apache.org/docs/en/latest/cordova/events/events.html
 // NEED TO REFRENCE THIS http://demos.jquerymobile.com/1.4.5/pages/
+// NEED TO REFRENCE THIS https://stackoverflow.com/questions/12280351/how-to-navigate-one-page-to-another-page-in-android-phonegap
 
 // Canvas Variables 
 var canvas; 
@@ -175,28 +176,28 @@ function onDeviceReady() {
 // onPause Function
 function onPause() {
 	pause = true;
-	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
+	window.location = "#pagetwo"; // Goes to Page two.
 }
 
 
 // onResume Function
 function onResume() {
 	pause = true;
-	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
+	window.location = "#pagetwo"; // Goes to Page two.
 }
 
 
 // onMenuKeyDown Function
 function onMenuKeyDown() {
 	pause = true;
-	$.mobile.changePage("#pagetwo", {transition: "slideup", changeHash: false }); // Goes to Page two
+	window.location = "#pagetwo"; // Goes to Page two.
 }
 
 
 // unPause Function
 function unPause() {
 	pause = false;
-	$.mobile.changePage("#pageone", {transition: "slideup", changeHash: false }); // Goes to Page one
+	window.location = "#pageone"; // Goes to Page one.
 }
 
 
