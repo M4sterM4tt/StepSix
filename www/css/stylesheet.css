@@ -1,6 +1,20 @@
 canvas {
+	margin: 0% 0% 0% 10%;
 	border-color: black;
 	border-style: solid;
 	border-width: 1px;
 }
 
+.time {
+	width: 40%;
+	margin: 0%;
+	padding: 0%;
+	text-align: left;
+}
+
+.pause {
+	width: 0%;
+	margin: 0%;
+	padding: 0%;
+	text-align: right;	
+}

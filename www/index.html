@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ball Maze Game</title><!-- Sets title of the homepage to "Ball Maze Game" -->
 		
+
 		<link rel="stylesheet" href="css/themes/Ball_Game_Theme.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="jquerymobile\jquery.mobile.structure-1.4.5.min.css" />
@@ -15,6 +16,7 @@
         <script src="jquerymobile\jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
 		<script src="cordova.js" type="text/javascript" charset="utf-8" ></script>
 		<script src="jquerymobile\jquery-1.8.3.min.js" type="text/javascript"></script>
+	
 	
 		<script type="text/javascript" src="js\index.js"></script><!-- Links to a javascript file -->
 		<link rel="stylesheet" type="text/css" href="css\stylesheet.css"></script><!-- Links to a css file -->
@@ -28,7 +30,10 @@
 		
 			<div data-role="content" class="ui-content">
 			
-				<div data-role="header" id="time">Time: 0</div>
+				<div data-role="header" data-enhance="false">
+					<div id="time" class="time" >Time: 0</div>
+					<div type="button" onclick="onPause();" class="pause">Pause</div>	
+				</div>
 				
 				<canvas id="canvas">
 				
@@ -58,12 +63,10 @@
 					<img id="wallRotatedArrowTouch" src="assets\wall_Rotated_Arrow_Touch.png" alt="wall_Rotated_Arrow_Touch" width="100" height="100"></img>
 				
 				
-				</canvas>
-
-				<input value="Pause" type="button" onclick="onPause();" ></input>
+				</canvas>			
 				
 			</div>
-		
+			
 		</div>
 		
 		
