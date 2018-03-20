@@ -203,6 +203,7 @@ function unPause() {
 
 // restart Function
 function restart() {
+	window.location = "#pageone";
 	location.reload(); // Reloads page
 }
 
@@ -589,7 +590,7 @@ window.addEventListener("touchmove", function wallArrowTouchMove(event) {
 			// wallArrowTouch
 			if (wallDefaultType[loopThree] == 3 && breaker == 0) {
 				if (touch.pageX - (1/10)*window.innerWidth < wallPositionX[loopThree] + canvas.width/20 && touch.pageX - (1/10)*window.innerWidth > wallPositionX[loopThree] - (1/2)*canvas.width/20 && touch.pageY - (1/10)*window.innerHeight < wallPositionY[loopThree] + 2*canvas.height/10 && touch.pageY - (1/10)*window.innerHeight > wallPositionY[loopThree]  - canvas.height/10) {	
-					wallPositionX[loopThree] = touch.pageX;	
+					wallPositionX[loopThree] = touch.pageX - (1/10)*window.innerWidth;	
 				}
 				
 		
