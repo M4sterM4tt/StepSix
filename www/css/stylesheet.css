@@ -9,7 +9,9 @@ canvas {
 	width: 0%;
 	margin: 0%;
 	padding: 0%;
-	float: left;
+	position: absolute;
+    left: 1%;
+    top: 0%;
 	color: black;
 }
 
@@ -17,6 +19,8 @@ canvas {
 	width: 0%;
 	margin: 0%;
 	padding: 0%;
-	float: right;
+	position: absolute;
+    right: 1%;
+    top: 0%;
 	color: black;	
 }
