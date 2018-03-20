@@ -566,7 +566,6 @@ function render() {
 // wallArrowTouch Functions
 window.addEventListener("touchstart", function wallArrowTouchStart(event) {
 	if (pause == false) {
-		event.preventDefault();
 		touch = event.touches[0];
 		breaker = 0;
 
@@ -583,7 +582,6 @@ window.addEventListener("touchstart", function wallArrowTouchStart(event) {
 });
 window.addEventListener("touchmove", function wallArrowTouchMove(event) {
 	if (pause == false) {
-		event.preventDefault();
 		touch = event.touches[0];
 		for(loopThree = 0; loopThree < wallType.length; loopThree+=1) {	
 
@@ -624,7 +622,7 @@ window.addEventListener("touchmove", function wallArrowTouchMove(event) {
 			// wallRotatedArrowTouch
 			if (wallDefaultType[loopThree] == 9 && breaker == 0) {
 				if (touch.pageX - (1/10)*window.innerWidth < wallPositionX[loopThree] + 2*canvas.width/20 && touch.pageX - (1/10)*window.innerWidth > wallPositionX[loopThree] - canvas.width/20 && touch.pageY - (1/10)*window.innerHeight < wallPositionY[loopThree] + 2*canvas.height/10 && touch.pageY - (1/10)*window.innerHeight > wallPositionY[loopThree]  - canvas.height/10) {	
-					wallPositionY[loopThree] = touch.pageY;	
+					wallPositionY[loopThree] = touch.pageY - (1/10)*window.innerHeight;	
 				}
 				
 		
@@ -658,7 +656,6 @@ window.addEventListener("touchmove", function wallArrowTouchMove(event) {
 });
 window.addEventListener("touchend", function wallArrowTouchEnd(event) {
 	if (pause == false) {
-		event.preventDefault();
 		breaker = 1;
 	}
 });
