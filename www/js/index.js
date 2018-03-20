@@ -623,7 +623,7 @@ window.addEventListener("touchmove", function wallArrowTouchMove(event) {
 			
 			// wallRotatedArrowTouch
 			if (wallDefaultType[loopThree] == 9 && breaker == 0) {
-				if (touch.pageX < wallPositionX[loopThree] + 2*canvas.width/20 && touch.pageX > wallPositionX[loopThree] - canvas.width/20 && touch.pageY < wallPositionY[loopThree] + 2*canvas.height/10 && touch.pageY > wallPositionY[loopThree]  - canvas.height/10) {	
+				if (touch.pageX - (1/10)*window.innerWidth < wallPositionX[loopThree] + 2*canvas.width/20 && touch.pageX - (1/10)*window.innerWidth > wallPositionX[loopThree] - canvas.width/20 && touch.pageY - (1/10)*window.innerHeight < wallPositionY[loopThree] + 2*canvas.height/10 && touch.pageY - (1/10)*window.innerHeight > wallPositionY[loopThree]  - canvas.height/10) {	
 					wallPositionY[loopThree] = touch.pageY;	
 				}
 				

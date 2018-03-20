@@ -6,15 +6,17 @@ canvas {
 }
 
 .time {
-	width: 40%;
+	width: 0%;
 	margin: 0%;
 	padding: 0%;
-	text-align: left;
+	float: left;
+	color: black;
 }
 
 .pause {
 	width: 0%;
 	margin: 0%;
 	padding: 0%;
-	text-align: right;	
+	float: right;
+	color: black;	
 }
