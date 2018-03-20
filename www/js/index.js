@@ -573,7 +573,7 @@ window.addEventListener("touchstart", function wallArrowTouchStart(event) {
 
 			// wallCloudTouch
 			if (wallDefaultType[loopThree] == 6) {
-				if (touch.pageX + (1/10)*window.innerWidth < wallPositionX[loopThree] + canvas.width/20 && touch.pageX + (1/10)*window.innerWidth > wallPositionX[loopThree] && touch.pageY + (1/10)*window.innerHeight < wallPositionY[loopThree] + canvas.height/10 && touch.pageY + (1/10)*window.innerHeight > wallPositionY[loopThree]) {			
+				if (touch.pageX - (1/10)*window.innerWidth < wallPositionX[loopThree] + canvas.width/20 && touch.pageX - (1/10)*window.innerWidth > wallPositionX[loopThree] && touch.pageY - (1/10)*window.innerHeight < wallPositionY[loopThree] + canvas.height/10 && touch.pageY - (1/10)*window.innerHeight > wallPositionY[loopThree]) {			
 					wallType[loopThree] = 10;			
 				}		
 			}	
@@ -588,7 +588,7 @@ window.addEventListener("touchmove", function wallArrowTouchMove(event) {
 
 			// wallArrowTouch
 			if (wallDefaultType[loopThree] == 3 && breaker == 0) {
-				if (touch.pageX + (1/10)*window.innerWidth < wallPositionX[loopThree] + canvas.width/20 && touch.pageX + (1/10)*window.innerWidth > wallPositionX[loopThree] - (1/2)*canvas.width/20 && touch.pageY + (1/10)*window.innerHeight < wallPositionY[loopThree] + 2*canvas.height/10 && touch.pageY + (1/10)*window.innerHeight > wallPositionY[loopThree]  - canvas.height/10) {	
+				if (touch.pageX - (1/10)*window.innerWidth < wallPositionX[loopThree] + canvas.width/20 && touch.pageX - (1/10)*window.innerWidth > wallPositionX[loopThree] - (1/2)*canvas.width/20 && touch.pageY - (1/10)*window.innerHeight < wallPositionY[loopThree] + 2*canvas.height/10 && touch.pageY - (1/10)*window.innerHeight > wallPositionY[loopThree]  - canvas.height/10) {	
 					wallPositionX[loopThree] = touch.pageX;	
 				}
 				
