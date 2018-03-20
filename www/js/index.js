@@ -573,7 +573,7 @@ window.addEventListener("touchstart", function wallArrowTouchStart(event) {
 
 			// wallCloudTouch
 			if (wallDefaultType[loopThree] == 6) {
-				if (touch.pageX < wallPositionX[loopThree] && touch.pageX > wallPositionX[loopThree] - canvas.width/20 && touch.pageY < wallPositionY[loopThree] && touch.pageY > wallPositionY[loopThree] - canvas.height/10) {			
+				if (touch.pageX + window.width/10 < wallPositionX[loopThree] + canvas.width/20 && touch.pageX + window.width/10 > wallPositionX[loopThree] && touch.pageY + window.height/10 < wallPositionY[loopThree] + canvas.height/10 && touch.pageY  + window.height/10 > wallPositionY[loopThree]) {			
 					wallType[loopThree] = 10;			
 				}		
 			}	
